@@ -5,16 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7fe52ba-40ab-4095-8d6d-faf79fe0dfea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_platform_console_standalone_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java-stigespill/Java-stigespill.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stigespill.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stigespill/StigeSpillTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stigespill/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stigespill/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stigespill/stigeSpill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stigespill/StigeSpill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/Dat109.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/Java-stigespill.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/stigeSpill/src/Brett.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/stigeSpill/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/stigeSpill/src/stigeSpill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/stigeSpill/stigeSpill.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/src/main/java/no/hvl/dat109/slangespill/SlangespillApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/src/main/java/no/hvl/dat109/slangespill/model/Rute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/src/main/java/no/hvl/dat109/slangespill/repository/RuteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring-Stigespill/src/test/java/no/hvl/dat109/slangespill/SlangespillApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,12 +98,20 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="stigespill" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="StigeSpillTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Stigespill" />
@@ -126,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769093582213</updated>
       <workItem from="1769093583269" duration="1352000" />
-      <workItem from="1769097193474" duration="334000" />
+      <workItem from="1769097193474" duration="754000" />
     </task>
     <servers />
   </component>
