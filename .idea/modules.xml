@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Stigespill.iml" filepath="$PROJECT_DIR$/Stigespill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-stigespill/Java-stigespill.iml" filepath="$PROJECT_DIR$/Java-stigespill/Java-stigespill.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-Stigespill/src/main/main.iml" filepath="$PROJECT_DIR$/Spring-Stigespill/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-Stigespill/src/test/test.iml" filepath="$PROJECT_DIR$/Spring-Stigespill/src/test/test.iml" />
     </modules>

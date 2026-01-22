@@ -2,6 +2,8 @@ package stigespill;
 
 import org.junit.jupiter.api.Test;
 
+import stigespill.versjon1.StigeSpill;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class StigeSpillTest {

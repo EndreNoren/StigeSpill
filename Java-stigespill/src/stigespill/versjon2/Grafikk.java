@@ -1,6 +1,9 @@
-package stigespill;
+package stigespill.versjon2;
 
 import javax.swing.*;
+
+import stigespill.versjon2.Main.Spiller;
+
 import java.awt.*;
 import java.util.*;
 import java.util.List;
