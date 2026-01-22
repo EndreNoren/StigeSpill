@@ -1,3 +1,5 @@
+package stigespill;
+
 import java.util.*;
 
 public class stigeSpill {
