@@ -2,7 +2,7 @@ package stigespill;
 
 import java.util.*;
 
-public class stigeSpill {
+public class StigeSpill {
     public static void main(String[] args) {
 
         List<Spiller> spillere = Arrays.asList(
@@ -13,6 +13,16 @@ public class stigeSpill {
 
         Spill spill = new Spill(spillere);
         spill.start();
+    }
+    public int flyttSpiller(int nåværendePlass, int terningkast) {
+        int nyPlass = nåværendePlass + terningkast;
+
+        // Logikk: Man kan ikke gå forbi rute 100
+        if (nyPlass > 100) {
+            return nåværendePlass;
+        }
+
+        return nyPlass;
     }
 
 
