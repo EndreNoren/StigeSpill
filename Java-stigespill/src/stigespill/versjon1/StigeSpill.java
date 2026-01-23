@@ -1,4 +1,4 @@
-package stigespill;
+package stigespill.versjon1;
 
 import java.util.*;
 
