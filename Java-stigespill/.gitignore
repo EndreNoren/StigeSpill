@@ -1,0 +1,17 @@
+/StigeSpillTest.class
+/versjon1/
+/stigespill/
+/Brett.png
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+
+# Build output
+bin/
+target/
+out/
