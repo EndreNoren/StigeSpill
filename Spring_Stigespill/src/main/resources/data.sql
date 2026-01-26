@@ -1,15 +1,15 @@
--- Sletter eksisterende data for å unngå duplikater ved restart
+-- Tømmer tabellen først for å unngå duplikater
 DELETE FROM rute;
 
 -- Spesialruter (Stiger og Slanger) fra Versjon 1
-INSERT INTO rute (id, flytt_til) VALUES (2, 15);  -- Stige
-INSERT INTO rute (id, flytt_til) VALUES (10, 35); -- Stige
-INSERT INTO rute (id, flytt_til) VALUES (25, 5);  -- Slange
-INSERT INTO rute (id, flytt_til) VALUES (37, 42); -- Stige
-INSERT INTO rute (id, flytt_til) VALUES (67, 42); -- Slange
-INSERT INTO rute (id, flytt_til) VALUES (98, 10); -- Slange
+INSERT INTO rute (id, flytt_til) VALUES (2, 15);
+INSERT INTO rute (id, flytt_til) VALUES (10, 35);
+INSERT INTO rute (id, flytt_til) VALUES (25, 5);
+INSERT INTO rute (id, flytt_til) VALUES (37, 42);
+INSERT INTO rute (id, flytt_til) VALUES (67, 42);
+INSERT INTO rute (id, flytt_til) VALUES (98, 10);
 
--- Vanlige ruter (flytt_til = 0 betyr ingen hopp)
+-- Vanlige ruter (1-100)
 INSERT INTO rute (id, flytt_til) VALUES (1, 0);
 INSERT INTO rute (id, flytt_til) VALUES (3, 0);
 INSERT INTO rute (id, flytt_til) VALUES (4, 0);
@@ -22,6 +22,7 @@ INSERT INTO rute (id, flytt_til) VALUES (11, 0);
 INSERT INTO rute (id, flytt_til) VALUES (12, 0);
 INSERT INTO rute (id, flytt_til) VALUES (13, 0);
 INSERT INTO rute (id, flytt_til) VALUES (14, 0);
+INSERT INTO rute (id, flytt_til) VALUES (15, 0);
 INSERT INTO rute (id, flytt_til) VALUES (16, 0);
 INSERT INTO rute (id, flytt_til) VALUES (17, 0);
 INSERT INTO rute (id, flytt_til) VALUES (18, 0);
