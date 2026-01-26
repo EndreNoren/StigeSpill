@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7fe52ba-40ab-4095-8d6d-faf79fe0dfea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring_Stigespill/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_Stigespill/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="b7fe52ba-40ab-4095-8d6d-faf79fe0dfea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +176,7 @@
       <workItem from="1769098067662" duration="2073000" />
       <workItem from="1769104171438" duration="101000" />
       <workItem from="1769115043256" duration="2373000" />
-      <workItem from="1769166537648" duration="5280000" />
+      <workItem from="1769166537648" duration="5880000" />
     </task>
     <servers />
   </component>

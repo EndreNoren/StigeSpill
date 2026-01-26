@@ -31,3 +31,15 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### OS spesifikke filer ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Loggfiler ###
+*.log
+
+### Midlertidige filer ###
+*.tmp
+*.bak
