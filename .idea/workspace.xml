@@ -6,6 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fe52ba-40ab-4095-8d6d-faf79fe0dfea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/StigeSpillTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/StigeSpillTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Brett.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Brett.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Spill.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Spill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Spiller.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Spiller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Terning.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill$Terning.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon1/StigeSpill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Grafikk.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Grafikk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Main$Spill.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Main$Spill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Main$Spiller.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Main$Spiller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/bin/stigespill/versjon2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_Stigespill/src/main/java/no/hvl/dat109/spring_stigespill/model/Brett.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_Stigespill/src/main/java/no/hvl/dat109/spring_stigespill/model/Brett.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_Stigespill/src/main/java/no/hvl/dat109/spring_stigespill/model/Spill.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_Stigespill/src/main/java/no/hvl/dat109/spring_stigespill/model/Spill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_Stigespill/src/main/java/no/hvl/dat109/spring_stigespill/model/Terning.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_Stigespill/src/main/java/no/hvl/dat109/spring_stigespill/model/Terning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_Stigespill/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_Stigespill/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +192,7 @@
       <workItem from="1769098067662" duration="2073000" />
       <workItem from="1769104171438" duration="101000" />
       <workItem from="1769115043256" duration="2373000" />
-      <workItem from="1769166537648" duration="1775000" />
+      <workItem from="1769166537648" duration="3165000" />
     </task>
     <servers />
   </component>

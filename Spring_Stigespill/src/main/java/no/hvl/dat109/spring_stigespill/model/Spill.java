@@ -26,16 +26,51 @@ public class Spill {
 	private List<Trekk> trekkLogg = new ArrayList<>();
 	
 	private int nesteSpillerIndex;
-	private boolean erFerdig;
+	private boolean ferdig;
 	
 	protected Spill() {} // tom konstruktør for jpa
 	
 	public Spill(List<Spiller> spillere){
 		this.spillere =spillere;
 		this.nesteSpillerIndex=0;
-		this.erFerdig=false;
+		this.ferdig=false;
 	}
 	
-	//flere meoder..
+	public void leggTilTrekk (Trekk trekk) {
+		this.trekkLogg.add(trekk);
+	}
+	
+	public Spiller nesteSpiller() {
+		return spillere.get(nesteSpillerIndex);
+	}
+	
+	public Long getId() {
+		return id;
+	}
+	
+	
+	public List<Spiller> getSpillere() { return spillere; }
+	
+    public void setSpillere(List<Spiller> spillere) { 
+    	this.spillere = spillere; 
+    }
+    
+	public List<Trekk> getTrekkLogg() {
+		return trekkLogg; }
+	    
+    public int getNesteSpillerIndex() { 
+    	return nesteSpillerIndex; 
+    }
+    
+    public void setNesteSpillerIndex(int nesteSpillerIndex) { 
+    	this.nesteSpillerIndex = nesteSpillerIndex; 
+    }
 
+    public boolean erFerdig() { 
+    	return ferdig;
+    }
+    
+    public void setFerdig(boolean ferdig) {
+    	this.ferdig = ferdig; 
+    }
 }

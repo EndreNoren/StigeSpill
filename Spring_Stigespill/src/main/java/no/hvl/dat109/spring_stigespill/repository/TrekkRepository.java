@@ -1,5 +1,5 @@
 package no.hvl.dat109.spring_stigespill.repository;
 
-public class TurRepository {
+public class TrekkRepository {
 
 }
