@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7fe52ba-40ab-4095-8d6d-faf79fe0dfea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Java-stigespill/bin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-stigespill/src/stigespill/versjon2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-stigespill/src/stigespill/versjon2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +95,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github\StigeSpill\Java-stigespill" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="stigespill" />

@@ -4,6 +4,12 @@ import javax.swing.*;
 
 import java.util.*;
 
+
+/**
+ * Starter applikasjonen
+ * Setter opp det grafiske vinduet og oppretter spillere
+ * og starter spillet i en egen tråd
+ */
 public class Main {
     public static void main(String[] args) {
 
@@ -25,6 +31,12 @@ public class Main {
         new Thread(() -> spill.start()).start();
     }
 
+
+    /**
+     * Representerer en Spiller i Spill som blir lagt i kø
+     * Spiller vet navn og posisjon
+     * GRASP: Informasjon ekspert
+     */
     static class Spiller {
         String navn;
         int posisjon;
@@ -35,6 +47,11 @@ public class Main {
         }
     }
 
+    /**
+     * Representerer Spillet og styrer spill flyten
+     * Har kontroll over kø, terningen, flytting av spillere(slange/stige) og bestemme hvem som vinner
+     * GRASP: Kontrollør
+     */
     static class Spill {
         Queue<Spiller> ko = new LinkedList<>();
         Grafikk grafikk;
@@ -64,6 +81,11 @@ public class Main {
             grafikk.oppdaterSpillere(new ArrayList<>(ko));
         }
 
+        /**
+         * Starter spillet og kjører while løkken
+         * Spillere tar turvis terningkast, flyttes og sjekker posisjon for hop
+         * GRASP: Controller
+         */
         void start() {
             try {
                 Thread.sleep(1000);
