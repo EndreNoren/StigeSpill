@@ -11,14 +11,16 @@ public class Spiller {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id; //Long standard for id
 	private String navn;
+	private String farge;
 	private int posisjon;
 	private int antallSekserePaaRad;
 	
 	protected Spiller() { //tom konstruktør for jpa
 	}
 	
-	public Spiller(String navn) {
+	public Spiller(String navn, String farge) {
 		this.navn=navn;
+		this.farge=farge;
 		this.posisjon=1; 
 		this.antallSekserePaaRad=0;
 	}
@@ -34,6 +36,14 @@ public class Spiller {
 	public void setNavn(String nyttNavn) {
 		this.navn=nyttNavn;
 	}
+	
+	public String getFarge() {
+        return farge;
+    }
+
+    public void setFarge(String farge) {
+        this.farge = farge;
+    }
 	
 	public int getPosisjon() {
 		return this.posisjon;

@@ -2,6 +2,9 @@ package no.hvl.dat109.spring_stigespill.model;
 
 import java.util.Random;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Terning {
 	private Random random;
 	

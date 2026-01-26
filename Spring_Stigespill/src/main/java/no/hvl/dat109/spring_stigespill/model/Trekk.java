@@ -27,7 +27,7 @@ public class Trekk {
 	
 	protected Trekk() {}  //tom konstruktør for jpa
 	
-	public Trekk(int terningkast, int fraRute,
+	public Trekk(Spill spill, int terningkast, int fraRute,
 			int tilRute, String spillerNavn, 
 			LocalDateTime tidspunkt) {
 		
