@@ -34,9 +34,9 @@ public class StigespillService {
     private RuteRepository ruteRepository;
     @Autowired
     private TrekkRepository trekkRepository;
-
-    private Terning terning = new Terning(); 
-
+    @Autowired 
+    private Terning terning;//for å kunne testes
+    
     /**
      * Oppretter et nytt spillobjekt med gitte spillere.
      * @param spillere Liste med spillere som skal delta.

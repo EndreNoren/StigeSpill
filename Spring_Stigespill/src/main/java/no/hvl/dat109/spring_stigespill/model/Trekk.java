@@ -9,6 +9,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
+/**
+ * Representerer et utført trekk (historikk) i spillet.
+ */
 @Entity
 public class Trekk {
 	@Id
@@ -27,6 +30,7 @@ public class Trekk {
 	
 	protected Trekk() {}  //tom konstruktør for jpa
 	
+	/** Oppretter et trekk med informasjon om kast, flytting og tidspunkt. */
 	public Trekk(Spill spill, int terningkast, int fraRute,
 			int tilRute, String spillerNavn, 
 			LocalDateTime tidspunkt) {

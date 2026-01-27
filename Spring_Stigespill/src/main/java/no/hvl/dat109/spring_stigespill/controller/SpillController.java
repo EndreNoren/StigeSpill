@@ -16,8 +16,7 @@ import no.hvl.dat109.spring_stigespill.view.BrettPanel;
 
 /**
  * Kontroller som styrer flyten i spillet.
- * Klassen setter opp det grafiske vinduet, håndterer input fra konsollen,
- * og kommuniserer mellom brukeren og spill-tjenesten.
+ * Inneholder nå en hovedmeny for å velge mellom nytt spill eller historikk.
  */
 @Component
 public class SpillController implements CommandLineRunner {
@@ -27,15 +26,11 @@ public class SpillController implements CommandLineRunner {
 
     private BrettPanel brettPanel;
 
-    /**
-     * Start-metoden som kjøres når applikasjonen starter.
-     * Setter opp GUI, henter spillere og kjører hovedløkken for spillet.
-     * * @param args Argumenter fra kommandolinjen (ikke i bruk).
-     */
     @Override
     public void run(String... args) {
         System.setProperty("java.awt.headless", "false");
 
+        // Setter opp vinduet én gang ved start
         JFrame vindu = new JFrame("Stigespill");
         brettPanel = new BrettPanel();
         vindu.add(brettPanel);
@@ -46,9 +41,44 @@ public class SpillController implements CommandLineRunner {
 
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("--- NYTT SPILL ---");
+        while (true) {
+            System.out.println("\n=== HOVEDMENY ===");
+            System.out.println("1. Start nytt spill");
+            System.out.println("2. Hent logg fra gammelt spill (via ID)");
+            System.out.println("q. Avslutt");
+            System.out.print("Valg: ");
+            
+            String valg = sc.nextLine();
+
+            if ("q".equals(valg)) {
+                System.out.println("Takk for nå!");
+                break;
+            } else if ("1".equals(valg)) {
+                kjoreNyttSpill(sc);
+            } else if ("2".equals(valg)) {
+                hentGammelLogg(sc);
+            } else {
+                System.out.println("Ugyldig valg.");
+            }
+        }
+        
+        sc.close();
+        System.exit(0); 
+    }
+
+    /**
+     * Kjører logikken for et nytt spill.
+     */
+    private void kjoreNyttSpill(Scanner sc) {
+        System.out.println("\n--- NYTT SPILL ---");
         System.out.print("Antall spillere: ");
-        int antall = Integer.parseInt(sc.nextLine());
+        int antall;
+        try {
+            antall = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Ugyldig antall.");
+            return;
+        }
 
         List<Spiller> spillere = new ArrayList<>();
         for (int i = 1; i <= antall; i++) {
@@ -59,15 +89,20 @@ public class SpillController implements CommandLineRunner {
         Spill spill = service.opprettNyttSpill(spillere);
         brettPanel.oppdaterSpillere(spill.getSpillere());
 
-        System.out.println("Spill opprettet (ID: " + spill.getId() + ")");
-        System.out.println("Trykk ENTER for å trille. 'q' for å avslutte.");
+        System.out.println("Spill opprettet med ID: " + spill.getId());
+        System.out.println("Noter deg ID-en hvis du vil se loggen senere!");
+        System.out.println("Trykk ENTER for å trille. 'logg' for historikk. 'q' for å gå til meny.");
 
+        
         while (true) {
             String input = sc.nextLine();
             
             if ("q".equals(input)) {
-                System.out.println("Avslutter...");
+                System.out.println("Avslutter spillet og går til meny...");
                 break;
+            } else if ("logg".equals(input)) {
+                visLogg(spill.getId());
+                continue; 
             }
 
             String melding = service.spillTur(spill.getId());
@@ -78,10 +113,41 @@ public class SpillController implements CommandLineRunner {
 
             if (oppdatert.erFerdig()) {
                 System.out.println("--- SPILLET ER SLUTT ---");
+                System.out.println("\nTrykk ENTER for å gå til hovedmeny...");
+                sc.nextLine();
                 break;
             }
         }
+    }
+
+    /**
+     * Lar brukeren skrive inn en ID for å hente logg.
+     */
+    private void hentGammelLogg(Scanner sc) {
+        System.out.print("Skriv inn Spill-ID: ");
+        try {
+            Long id = Long.parseLong(sc.nextLine());
+            visLogg(id);
+        } catch (NumberFormatException e) {
+            System.out.println("Ugyldig ID");
+        }
+        System.out.println("\nTrykk ENTER for å gå tilbake");
+        sc.nextLine();
+    }
+    
+    /**
+     * Hjelpemetode som printer loggen.
+     */
+    private void visLogg(Long spillId) {
+        List<String> logg = service.hentLogg(spillId);
         
-        sc.close();
+        if (logg.isEmpty()) {
+            System.out.println("Fant ingen logg for spill ID " + spillId + " (eller loggen er tom)");
+        } else {
+            System.out.println("\n LOGG FOR SPILL " + spillId + " ---");
+            for (String linje : logg) {
+                System.out.println(linje);
+            }
+        }
     }
 }

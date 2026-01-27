@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"no.hvl.dat109.spring_stigespill.controller","c":"SpillController","l":"run(String...)","u":"run(java.lang.String...)"},{"p":"no.hvl.dat109.spring_stigespill.controller","c":"SpillController","l":"SpillController()","u":"%3Cinit%3E()"}];updateSearchResults();

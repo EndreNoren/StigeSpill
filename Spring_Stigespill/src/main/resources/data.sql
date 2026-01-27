@@ -1,9 +1,7 @@
 -- 1. Tøm tabellen for å starte med blanke ark
 DELETE FROM rute;
 
--- ==========================================
--- SPESIALRUTER (Slanger og Stiger)
--- ==========================================
+-- SPESIALRUTER
 
 -- Slanger (Ned)
 INSERT INTO rute (id, flytt_til) VALUES (98, 68);
@@ -21,10 +19,9 @@ INSERT INTO rute (id, flytt_til) VALUES (42, 80);
 INSERT INTO rute (id, flytt_til) VALUES (57, 85);
 INSERT INTO rute (id, flytt_til) VALUES (67, 94);
 
--- ==========================================
+
 -- VANLIGE RUTER (Resten opp til 100)
 -- Disse flytter deg ingen steder (0)
--- ==========================================
 
 -- Rad 1 (1-10)
 INSERT INTO rute (id, flytt_til) VALUES (1, 0);

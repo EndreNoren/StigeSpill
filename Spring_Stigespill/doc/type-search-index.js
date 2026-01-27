@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"no.hvl.dat109.spring_stigespill.controller","l":"SpillController"}];updateSearchResults();

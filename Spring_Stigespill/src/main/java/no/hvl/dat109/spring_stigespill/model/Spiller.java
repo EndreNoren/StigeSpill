@@ -5,11 +5,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+/**
+ * Representerer en deltaker i stigespillet.
+ */
 @Entity
 public class Spiller {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id; //Long standard for id
+	private Long id;
 	private String navn;
 	private String farge;
 	private int posisjon;
@@ -18,6 +21,9 @@ public class Spiller {
 	protected Spiller() { //tom konstruktør for jpa
 	}
 	
+	/**
+	 * Oppretter en ny spiller med navn og farge, startposisjon settes til 1.
+	 */
 	public Spiller(String navn, String farge) {
 		this.navn=navn;
 		this.farge=farge;
