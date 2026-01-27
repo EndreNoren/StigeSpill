@@ -16,12 +16,6 @@ public class Brett {
 	
 	public int finnDestinasjon(int plassering, int kast) {
 		int nyPlassering = plassering + kast;
-		
-		if(nyPlassering > 100) {
-			int overskytende = nyPlassering -100;
-			nyPlassering = 100 - overskytende;
-		}
-		
 		Rute landerPaa = ruter.get(nyPlassering);
 		
 		if(landerPaa != null && landerPaa.erSpesialRute()) {
