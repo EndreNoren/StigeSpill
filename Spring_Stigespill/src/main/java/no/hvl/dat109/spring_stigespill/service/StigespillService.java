@@ -1,6 +1,7 @@
 package no.hvl.dat109.spring_stigespill.service;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,7 +61,9 @@ public class StigespillService {
         if (spill.erFerdig()) {
         	return "Spillet er ferdig!";
         }
-
+        
+        spill.getSpillere().sort(Comparator.comparing(Spiller::getId));
+        
         List<Rute> alleRuter = ruteRepository.findAll();
         Brett brett = new Brett(alleRuter);
         
@@ -163,4 +166,11 @@ public class StigespillService {
         spillerRepository.save(s);
         spillRepository.save(spill);
     }
+    
+    @Transactional(readOnly = true)
+    public Spill hentSpill(Long spillId) {
+    	return spillRepository.findById(spillId).orElse(null);
+    }
+    
+    
 }
