@@ -71,13 +71,21 @@ public class SpillController implements CommandLineRunner {
      */
     private void kjoreNyttSpill(Scanner sc) {
         System.out.println("\n--- NYTT SPILL ---");
-        System.out.print("Antall spillere: ");
         int antall;
-        try {
-            antall = Integer.parseInt(sc.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Ugyldig antall.");
-            return;
+        while (true) {
+            System.out.print("Antall spillere (2–4): ");
+            try {
+                antall = Integer.parseInt(sc.nextLine());
+
+                if (antall < 2 || antall > 4) {
+                    System.out.println("Antall spillere må være mellom 2 og 4.");
+                } else {
+                    break; // gyldig input
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Ugyldig input. Skriv et tall.");
+            }
         }
 
         List<Spiller> spillere = new ArrayList<>();
